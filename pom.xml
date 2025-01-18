@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.egov</groupId>
-    <artifactId>fda-analytics-service</artifactId>
+    <artifactId>analyticsserverboot3</artifactId>
     <version>dev-1</version>
-    <name>fda-analytics-service</name>
-    <description>fda-analytics-service</description>
+    <name>analyticsserverboot3</name>
+    <description>analyticsserverboot3</description>
     <url/>
     <licenses>
         <license/>

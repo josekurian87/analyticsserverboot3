@@ -1,4 +1,4 @@
-package com.egov.fdaanalyticsservice;
+package com.egov.analyticsserverboot3;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

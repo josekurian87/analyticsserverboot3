@@ -1,4 +1,4 @@
-package com.egov.fdaanalyticsservice;
+package com.egov.analyticsserverboot3;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Service;

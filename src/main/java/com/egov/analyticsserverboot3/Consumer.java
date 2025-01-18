@@ -1,4 +1,4 @@
-package com.egov.fdaanalyticsservice;
+package com.egov.analyticsserverboot3;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;

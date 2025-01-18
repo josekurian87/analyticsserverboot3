@@ -1,4 +1,4 @@
-package com.egov.fdaanalyticsservice;
+package com.egov.analyticsserverboot3;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.slf4j.Logger;

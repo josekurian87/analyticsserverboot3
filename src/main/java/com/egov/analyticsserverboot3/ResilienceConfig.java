@@ -1,4 +1,4 @@
-package com.egov.fdaanalyticsservice;
+package com.egov.analyticsserverboot3;
 
 import io.github.resilience4j.circuitbreaker.CircuitBreakerConfig;
 import io.github.resilience4j.retry.RetryConfig;

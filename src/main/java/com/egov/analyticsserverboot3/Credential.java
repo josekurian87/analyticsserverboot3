@@ -1,4 +1,4 @@
-package com.egov.fdaanalyticsservice;
+package com.egov.analyticsserverboot3;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
