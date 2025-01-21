@@ -10,38 +10,17 @@ import org.springframework.stereotype.Service;
 import java.io.IOException;
 
 @Service
-public class Consumer
-{
+public class Consumer {
     private final Logger logger = LoggerFactory.getLogger(Consumer.class);
-
-    //@Qualifier("analyticsDataCounter")
-    //@Autowired
-    //Counter analytics_counter;
-
-    //@Qualifier("offerCounter")
-   // @Autowired
-    //Counter offer_counter;
 
     @Autowired
     ObjectMapper mapper;
 
-    @KafkaListener(topics = "auth-events", groupId = "1")
-    public void consumeAuthEvents(String message) throws IOException
-    {
-        //analytics_counter.increment();
-        Analytic datum =  mapper.readValue(message,Analytic.class);
-        logger.info(String.format("#### -> Consumed message -> %s", datum.getDescription()));
+    @KafkaListener(topics = "ecom-order-events", groupId = "1")
+    public void consumeAuthEvents(String message) throws IOException {
+        Analytic datum = mapper.readValue(message, Analytic.class);
+        logger.info(String.format("Kafka_eCom -> Consumed message -> %s", datum.getDescription()));
     }
-
-    @KafkaListener(topics = "general-events", groupId = "1")
-    public void consumeGenEvents(String message) throws IOException
-    {
-        //analytics_counter.increment();
-        //ObjectMapper mapper  = new ObjectMapper();
-        //Analytic datum =  mapper.readValue(message,Analytic.class);
-        logger.info(String.format("#### -> Consumed message -> %s", message));
-    }
-
 
 }
 
